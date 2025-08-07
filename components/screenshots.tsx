@@ -32,9 +32,9 @@ export function Screenshots() {
     },
     {
       src: "/images/categorization.png",
-      alt: "Smart Categorization", 
-      title: "Smart Categorization",
-      description: "Automatically categorize transactions with intelligent vendor matching and customizable rules.",
+            alt: "Smart Categorisation",
+      title: "Smart Categorisation",
+      description: "Automatically categorise transactions with intelligent vendor matching and customisable rules.",
       icon: Tags,
       color: "from-purple-500 to-violet-600",
       bgColor: "bg-purple-50 dark:bg-purple-900/20"

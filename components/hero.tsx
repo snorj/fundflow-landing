@@ -29,9 +29,9 @@ export function Hero() {
     },
     {
       src: "/images/categorization.png",
-      alt: "Smart Categorization", 
-      title: "Smart Categorization",
-      description: "Automatically categorize transactions with intelligent vendor matching",
+            alt: "Smart Categorisation",
+      title: "Smart Categorisation",
+      description: "Automatically categorise transactions with intelligent vendor matching",
       icon: Tags,
       color: "from-purple-500 to-violet-600"
     },
@@ -86,7 +86,7 @@ export function Hero() {
               
               <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
                 The open-source personal finance tool that keeps your data private and secure.
-                Import your bank transactions, categorize expenses, and gain insights into your spending, all running locally on your computer.
+                Import your bank transactions, categorise expenses, and gain insights into your spending, all running locally on your computer.
               </p>
             </div>
           </div>

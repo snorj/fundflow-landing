@@ -14,8 +14,8 @@ export function Features() {
     },
     {
       icon: Brain, 
-      title: "Smart Categorization",
-      description: "Automatic transaction categorization with intelligent vendor matching and customizable rules.",
+          title: "Smart Categorisation",
+    description: "Automatic transaction categorisation with intelligent vendor matching and customisable rules.",
       color: "from-blue-500 to-cyan-600",
       bgColor: "bg-blue-50 dark:bg-blue-900/10",
       borderColor: "border-blue-200 dark:border-blue-800"
@@ -47,7 +47,7 @@ export function Features() {
     {
       icon: Globe,
       title: "Open Source", 
-      description: "Fully open source with transparent code. Contribute, customize, or audit as needed.",
+      description: "Fully open source with transparent code. Contribute, customise, or audit as needed.",
       color: "from-indigo-500 to-blue-600",
       bgColor: "bg-indigo-50 dark:bg-indigo-900/10",
       borderColor: "border-indigo-200 dark:border-indigo-800"

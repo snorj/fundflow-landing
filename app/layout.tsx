@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "FundFlow - Take Control of Your Financial Life",
-  description: "The open-source personal finance tool that keeps your data private and secure. Import transactions, categorize expenses, and gain insights into your spending.",
+      description: "The open-source personal finance tool that keeps your data private and secure. Import transactions, categorise expenses, and gain insights into your spending.",
   openGraph: {
     title: "FundFlow - Privacy-First Personal Finance",
     description: "Open-source personal finance management with complete data privacy",
