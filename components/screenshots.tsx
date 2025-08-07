@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { BarChart3, CreditCard, Tags, TrendingUp, Upload, ChevronLeft, ChevronRight } from "lucide-react"
 
 export function Screenshots() {
+  // Force refresh - screenshots should now load correctly
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAutoPlaying, setIsAutoPlaying] = useState(true)
   const autoPlayRef = useRef<NodeJS.Timeout | null>(null)
