@@ -27,7 +27,7 @@ export function Header() {
               alt="FundFlow Logo"
               width={120}
               height={40}
-              className="h-8 sm:h-10 w-auto dark:hidden"
+              className="h-8 sm:h-10 w-auto block dark:hidden"
               priority
             />
             <Image
@@ -52,11 +52,13 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
-            <ThemeToggle />
+            <div className="hidden md:block">
+              <ThemeToggle />
+            </div>
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden flex items-center gap-1 sm:gap-2">
+          <div className="flex md:hidden items-center gap-2">
             <ThemeToggle />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
