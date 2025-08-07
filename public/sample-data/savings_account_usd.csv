@@ -1,0 +1,8 @@
+Date,Description,Amount,Category,Account
+2024-06-01,Transfer from Checking,-500.00,Transfer,Savings USD
+2024-06-01,Monthly Interest,12.45,Income,Savings USD
+2024-06-15,Automatic Savings,200.00,Transfer,Savings USD
+2024-06-30,Monthly Interest,13.67,Income,Savings USD
+2024-07-01,Transfer to Checking,-1000.00,Transfer,Savings USD
+2024-07-15,Automatic Savings,200.00,Transfer,Savings USD
+2024-07-20,Emergency Transfer,-300.00,Transfer,Savings USD 
