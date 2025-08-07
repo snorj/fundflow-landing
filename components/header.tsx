@@ -27,7 +27,8 @@ export function Header() {
               alt="FundFlow Logo"
               width={120}
               height={40}
-              className="h-8 sm:h-10 w-auto block dark:hidden"
+              className="dark:hidden"
+              style={{ height: '40px', width: 'auto' }}
               priority
             />
             <Image
@@ -35,13 +36,14 @@ export function Header() {
               alt="FundFlow Logo"
               width={120}
               height={40}
-              className="h-8 sm:h-10 w-auto hidden dark:block"
+              className="hidden dark:block"
+              style={{ height: '40px', width: 'auto' }}
               priority
             />
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex nav-links">
+          <div className="hidden lg:flex nav-links">
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -52,13 +54,13 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
-            <div className="hidden md:block">
+            <div className="hidden lg:block">
               <ThemeToggle />
             </div>
           </div>
 
           {/* Mobile Navigation */}
-          <div className="flex md:hidden items-center gap-2">
+          <div className="mobile-nav items-center gap-2">
             <ThemeToggle />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
@@ -67,9 +69,9 @@ export function Header() {
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
-              <SheetContent>
+              <SheetContent className="mobile-menu-content">
                 <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
-                <div className="flex flex-col space-y-4 mt-8">
+                <div className="flex flex-col space-y-2">
                   {navigation.map((item) => (
                     <Link
                       key={item.name}

@@ -195,6 +195,7 @@
     top: 0;
     z-index: 100;
     backdrop-filter: blur(8px);
+    --header-height: 92px;
 }
 
 @media (min-width: 640px) {
@@ -222,10 +223,40 @@
     min-height: 60px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .nav {
         min-height: 56px;
     }
+}
+
+/* Mobile menu positioning to prevent overlap */
+[data-slot="sheet-content"] {
+    top: var(--header-height, 92px) !important;
+    height: calc(100vh - var(--header-height, 92px)) !important;
+    max-height: calc(100vh - var(--header-height, 92px)) !important;
+    z-index: 200 !important;
+}
+
+/* Sheet overlay positioning */
+[data-slot="sheet-overlay"] {
+    z-index: 150 !important;
+}
+
+/* Ensure proper spacing for mobile menu */
+.mobile-menu-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mobile-menu-content a {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    display: block;
+    transition: background-color 0.2s ease;
+}
+
+.mobile-menu-content a:hover {
+    background-color: hsl(var(--accent));
 }
 
 .logo {
@@ -242,13 +273,58 @@
     display: block;
 }
 
+/* Ensure proper theme switching for logos */
+.logo img {
+    display: block;
+}
+
+/* Light theme: show dark logo, hide light logo */
+:not(.dark) .logo img[src*="logoDark"] {
+    display: block !important;
+}
+
+:not(.dark) .logo img[src*="logoLight"] {
+    display: none !important;
+}
+
+/* Dark theme: hide dark logo, show light logo */
+.dark .logo img[src*="logoDark"] {
+    display: none !important;
+}
+
+.dark .logo img[src*="logoLight"] {
+    display: block !important;
+}
+
 .nav-links {
-    display: flex;
     align-items: center;
     gap: 1rem;
 }
 
-@media (min-width: 768px) {
+/* Ensure proper responsive navigation visibility */
+@media (max-width: 1023px) {
+    .nav-links {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .nav-links {
+        display: flex !important;
+    }
+}
+
+/* Mobile navigation visibility */
+@media (max-width: 1023px) {
+    .mobile-nav {
+        display: flex !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    .mobile-nav {
+        display: none !important;
+    }
     .nav-links {
         gap: 2rem;
     }

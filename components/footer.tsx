@@ -11,16 +11,18 @@ export function Footer() {
               <Image
                 src="/logos/logoDark.svg"
                 alt="FundFlow Logo"
-                width={108}
-                height={36}
-                className="h-9 w-auto dark:hidden"
+                width={120}
+                height={40}
+                className="dark:hidden"
+                style={{ height: '40px', width: 'auto' }}
               />
               <Image
                 src="/logos/logoLight.svg"
                 alt="FundFlow Logo"
-                width={108}
-                height={36}
-                className="h-9 w-auto hidden dark:block"
+                width={120}
+                height={40}
+                className="hidden dark:block"
+                style={{ height: '40px', width: 'auto' }}
               />
             </div>
             <p>Open-source personal finance management with complete privacy.</p>
