@@ -723,6 +723,74 @@
     background: hsl(var(--primary) / 0.9);
 }
 
+/* Grid pattern background */
+.bg-grid-pattern {
+    background-image: radial-gradient(circle, hsl(var(--muted-foreground) / 0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+}
+
+/* Custom animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -3s;
+}
+
+/* Enhanced hover effects */
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px hsl(var(--foreground) / 0.1);
+}
+
+/* Gradient text effects */
+.gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--chart-2)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glass morphism effect */
+.glass {
+    background: hsl(var(--card) / 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid hsl(var(--border) / 0.5);
+}
+
+/* Improved shadow system */
+.shadow-glow {
+    box-shadow: 0 0 40px hsl(var(--primary) / 0.2);
+}
+
+.shadow-glow-hover:hover {
+    box-shadow: 0 0 60px hsl(var(--primary) / 0.3);
+}
+
+/* Better spacing utilities */
+.space-y-8 > * + * {
+    margin-top: 2rem;
+}
+
+.space-y-12 > * + * {
+    margin-top: 3rem;
+}
+
+.space-y-16 > * + * {
+    margin-top: 4rem;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .hero-title {
@@ -747,5 +815,28 @@
     
     .container {
         padding: 0 1rem;
+    }
+
+    /* Mobile-specific adjustments */
+    .text-4xl {
+        font-size: 2.25rem;
+    }
+    
+    .text-5xl {
+        font-size: 2.5rem;
+    }
+    
+    .text-6xl {
+        font-size: 3rem;
+    }
+    
+    .py-24 {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    
+    .py-32 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 }
