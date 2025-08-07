@@ -12,7 +12,7 @@ export function Hero() {
   
   const screenshots = [
     {
-      src: "/images/dashboard.png",
+      src: "/images/Dashboard.png",
       alt: "FundFlow Dashboard",
       title: "Dashboard Overview",
       description: "Complete view of your financial health with balance summaries and spending trends",
@@ -20,7 +20,7 @@ export function Hero() {
       color: "from-blue-500 to-cyan-600"
     },
     {
-      src: "/images/transactions.png", 
+      src: "/images/financial_visualisation.png", 
       alt: "Transaction Management",
       title: "Transaction Management",
       description: "Browse, search, and manage transactions with powerful filtering capabilities",
@@ -29,14 +29,14 @@ export function Hero() {
     },
     {
       src: "/images/categorization.png",
-            alt: "Smart Categorisation",
+      alt: "Smart Categorisation",
       title: "Smart Categorisation",
       description: "Automatically categorise transactions with intelligent vendor matching",
       icon: Tags,
       color: "from-purple-500 to-violet-600"
     },
     {
-      src: "/images/analytics.png",
+      src: "/images/charts.png",
       alt: "Financial Analytics",
       title: "Financial Analytics", 
       description: "Understand spending patterns with beautiful charts and detailed insights",
@@ -44,7 +44,7 @@ export function Hero() {
       color: "from-orange-500 to-red-600"
     },
     {
-      src: "/images/upload.png",
+      src: "/images/Upload.png",
       alt: "Easy Import",
       title: "Easy Import",
       description: "Import transactions from multiple banks with simple CSV upload",
