@@ -11,7 +11,7 @@ export function Download() {
   const [copied, setCopied] = useState(false)
 
   const copyInstallCommand = async () => {
-    const command = 'curl -sSL https://fundflow.dev/install | bash'
+    const command = 'curl -fsSL https://fundflow.dev/install | bash'
     try {
       await navigator.clipboard.writeText(command)
       setCopied(true)
@@ -151,7 +151,7 @@ export function Download() {
                   </Button>
                 </div>
                 <code className="block p-4 text-sm font-mono text-foreground bg-card">
-                  curl -sSL https://fundflow.dev/install | bash
+                  curl -fsSL https://fundflow.dev/install | bash
                 </code>
               </div>
               

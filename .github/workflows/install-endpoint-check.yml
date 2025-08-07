@@ -1,0 +1,26 @@
+name: Validate install endpoint
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  check-install-endpoint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify production /install serves a shell script
+        run: |
+          set -euo pipefail
+          url="https://fundflow.dev/install"
+          tmpfile="/tmp/install.sh"
+          headers=$(curl -fsS -D - -o "$tmpfile" "$url") || {
+            echo "curl failed for $url" >&2
+            exit 1
+          }
+          echo "$headers" | grep -iE '^HTTP/[^ ]+ 200' >/dev/null
+          echo "$headers" | grep -iE '^content-type: *text/plain' >/dev/null
+          head -n1 "$tmpfile" | grep -q '^#!/bin/bash'
+          echo "OK: $url returns 200 text/plain and a bash shebang"
