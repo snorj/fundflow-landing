@@ -27,14 +27,16 @@ export function Header() {
               alt="FundFlow Logo"
               width={120}
               height={40}
-              className="h-10 w-auto dark:hidden"
+              className="h-8 sm:h-10 w-auto dark:hidden"
+              priority
             />
             <Image
               src="/logos/logoLight.svg"
               alt="FundFlow Logo"
               width={120}
               height={40}
-              className="h-10 w-auto hidden dark:block"
+              className="h-8 sm:h-10 w-auto hidden dark:block"
+              priority
             />
           </div>
 
@@ -54,7 +56,7 @@ export function Header() {
           </div>
 
           {/* Mobile Navigation */}
-          <div className="md:hidden flex items-center gap-2">
+          <div className="md:hidden flex items-center gap-1 sm:gap-2">
             <ThemeToggle />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
