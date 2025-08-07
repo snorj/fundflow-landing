@@ -2,7 +2,6 @@ import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
 import { VideoDemo } from "@/components/video-demo"
 import { DemoNotice } from "@/components/demo-notice"
-import { Screenshots } from "@/components/screenshots"
 import { Features } from "@/components/features"
 import { SupportedBanks } from "@/components/supported-banks"
 import { SampleData } from "@/components/sample-data"
@@ -20,7 +19,6 @@ export default function Home() {
           <VideoDemo />
           <DemoNotice />
           <Features />
-          <Screenshots />
           <SupportedBanks />
           <SampleData />
           <Download />

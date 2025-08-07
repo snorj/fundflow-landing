@@ -3,15 +3,13 @@
 import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { useTheme } from "next-themes"
 import { Menu } from "lucide-react"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { Button } from "@/components/ui/button"
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet"
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
-  const { theme } = useTheme()
 
   const navigation = [
     { name: "Features", href: "#features" },
@@ -25,11 +23,18 @@ export function Header() {
         <nav className="nav">
           <div className="logo">
             <Image
-              src={theme === "dark" ? "/logos/logoLight.svg" : "/logos/logoLight.svg"}
+              src="/logos/logoDark.svg"
               alt="FundFlow Logo"
-              width={32}
-              height={32}
-              className="h-8 w-8"
+              width={120}
+              height={40}
+              className="h-10 w-auto dark:hidden"
+            />
+            <Image
+              src="/logos/logoLight.svg"
+              alt="FundFlow Logo"
+              width={120}
+              height={40}
+              className="h-10 w-auto hidden dark:block"
             />
           </div>
 
@@ -59,6 +64,7 @@ export function Header() {
                 </Button>
               </SheetTrigger>
               <SheetContent>
+                <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
                 <div className="flex flex-col space-y-4 mt-8">
                   {navigation.map((item) => (
                     <Link

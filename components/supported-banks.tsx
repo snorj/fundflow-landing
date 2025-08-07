@@ -53,7 +53,7 @@ export function SupportedBanks() {
   ]
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-muted/20 relative">
+    <section className="py-24 bg-slate-50/50 dark:bg-slate-900/30 relative">
       {/* Section separator */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
       
@@ -81,9 +81,9 @@ export function SupportedBanks() {
                 <Image
                   src={bank.src}
                   alt={bank.alt}
-                  width={80}
-                  height={40}
-                  className="max-h-12 max-w-full object-contain opacity-70 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0"
+                  width={100}
+                  height={50}
+                  className="max-h-10 max-w-full object-contain opacity-70 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0"
                 />
               </div>
             </Card>

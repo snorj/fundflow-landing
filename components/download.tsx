@@ -22,7 +22,7 @@ export function Download() {
   }
 
   return (
-    <section id="download" className="py-24 bg-gradient-to-b from-background via-muted/20 to-muted/30 relative">
+    <section id="download" className="py-24 bg-gradient-to-b from-slate-100/80 to-slate-200/60 dark:from-slate-800/40 dark:to-slate-900/60 relative">
       {/* Section separator */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
       

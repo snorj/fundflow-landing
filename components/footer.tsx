@@ -7,15 +7,21 @@ export function Footer() {
       <div className="container">
         <div className="footer-content">
           <div className="footer-section">
-            <div className="logo flex items-center gap-2 mb-4">
+            <div className="logo mb-4">
+              <Image
+                src="/logos/logoDark.svg"
+                alt="FundFlow Logo"
+                width={108}
+                height={36}
+                className="h-9 w-auto dark:hidden"
+              />
               <Image
                 src="/logos/logoLight.svg"
                 alt="FundFlow Logo"
-                width={32}
-                height={32}
-                className="h-8 w-8"
+                width={108}
+                height={36}
+                className="h-9 w-auto hidden dark:block"
               />
-              <h3 className="text-xl font-semibold">FundFlow</h3>
             </div>
             <p>Open-source personal finance management with complete privacy.</p>
           </div>

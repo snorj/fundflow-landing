@@ -4,7 +4,7 @@ import { Play } from "lucide-react"
 export function VideoDemo() {
 
   return (
-    <section className="py-24 bg-gradient-to-b from-muted/20 via-muted/10 to-background relative">
+    <section className="py-24 bg-muted/50 relative">
       {/* Section separator */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
       
