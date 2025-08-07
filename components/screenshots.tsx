@@ -13,7 +13,7 @@ export function Screenshots() {
 
   const screenshots = [
     {
-      src: "/images/dashboard.png",
+      src: "/images/Dashboard.png",
       alt: "FundFlow Dashboard",
       title: "Dashboard Overview",
       description: "Get a complete view of your financial health with balance summaries, spending trends, and quick access to all features.",
@@ -22,7 +22,7 @@ export function Screenshots() {
       bgColor: "bg-blue-50 dark:bg-blue-900/20"
     },
     {
-      src: "/images/transactions.png", 
+      src: "/images/financial_visualisation.png", 
       alt: "Transaction Management",
       title: "Transaction Management",
       description: "Browse, search, and manage all your transactions with powerful filtering and sorting capabilities.",
@@ -32,7 +32,7 @@ export function Screenshots() {
     },
     {
       src: "/images/categorization.png",
-            alt: "Smart Categorisation",
+      alt: "Smart Categorisation",
       title: "Smart Categorisation",
       description: "Automatically categorise transactions with intelligent vendor matching and customisable rules.",
       icon: Tags,
@@ -40,7 +40,7 @@ export function Screenshots() {
       bgColor: "bg-purple-50 dark:bg-purple-900/20"
     },
     {
-      src: "/images/analytics.png",
+      src: "/images/charts.png",
       alt: "Financial Analytics",
       title: "Financial Analytics", 
       description: "Understand your spending patterns with beautiful charts and detailed financial insights.",
@@ -49,7 +49,7 @@ export function Screenshots() {
       bgColor: "bg-orange-50 dark:bg-orange-900/20"
     },
     {
-      src: "/images/upload.png",
+      src: "/images/Upload.png",
       alt: "Easy Import",
       title: "Easy Import",
       description: "Import transactions from multiple banks and accounts with simple CSV upload and processing.",
