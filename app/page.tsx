@@ -8,22 +8,25 @@ import { SupportedBanks } from "@/components/supported-banks"
 import { SampleData } from "@/components/sample-data"
 import { Download } from "@/components/download"
 import { Footer } from "@/components/footer"
+import { ScrollAnimationProvider } from "@/components/scroll-animation-provider"
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <Header />
-      <main>
-        <Hero />
-        <VideoDemo />
-        <DemoNotice />
-        <Features />
-        <Screenshots />
-        <SupportedBanks />
-        <SampleData />
-        <Download />
-      </main>
-      <Footer />
-    </div>
+    <ScrollAnimationProvider>
+      <div className="min-h-screen">
+        <Header />
+        <main>
+          <Hero />
+          <VideoDemo />
+          <DemoNotice />
+          <Features />
+          <Screenshots />
+          <SupportedBanks />
+          <SampleData />
+          <Download />
+        </main>
+        <Footer />
+      </div>
+    </ScrollAnimationProvider>
   );
 }

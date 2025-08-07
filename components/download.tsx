@@ -22,20 +22,23 @@ export function Download() {
   }
 
   return (
-    <section id="download" className="py-24 bg-gradient-to-b from-muted/30 to-background">
+    <section id="download" className="py-24 bg-gradient-to-b from-background via-muted/20 to-muted/30 relative">
+      {/* Section separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+      
       <div className="container">
-        <div className="text-center mb-16 space-y-4">
-          <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary border-primary/20">
+        <div className="text-center mb-16 space-y-4 scroll-animate">
+          <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary border-primary/20 scroll-animate animate-delay-100">
             Get Started
           </Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold">Ready to Get Started?</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-4xl lg:text-5xl font-bold scroll-animate animate-delay-200">Ready to Get Started?</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed scroll-animate animate-delay-300">
             Choose your preferred way to experience FundFlow
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          <Card className="group relative overflow-hidden bg-gradient-to-br from-primary/5 to-chart-2/5 border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+          <Card className="group relative overflow-hidden bg-gradient-to-br from-primary/5 to-chart-2/5 border-2 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 scroll-animate-left animate-delay-400">
             <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 rounded-full blur-2xl"></div>
             <div className="relative p-8 space-y-6">
               <div className="flex items-center space-x-3">
@@ -82,7 +85,7 @@ export function Download() {
             </div>
           </Card>
           
-          <Card className="group relative overflow-hidden bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/10 dark:to-emerald-900/10 border-2 border-green-200 dark:border-green-800 hover:border-green-300 dark:hover:border-green-700 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+          <Card className="group relative overflow-hidden bg-gradient-to-br from-green-50 to-emerald-50 dark:from-green-900/10 dark:to-emerald-900/10 border-2 border-green-200 dark:border-green-800 hover:border-green-300 dark:hover:border-green-700 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 scroll-animate-right animate-delay-500">
             <div className="absolute top-0 right-0 w-32 h-32 bg-green-500/10 rounded-full blur-2xl"></div>
             <div className="relative p-8 space-y-6">
               <div className="flex items-center space-x-3">

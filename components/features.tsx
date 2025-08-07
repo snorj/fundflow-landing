@@ -55,21 +55,24 @@ export function Features() {
   ]
 
   return (
-    <section id="features" className="py-24 bg-gradient-to-b from-background to-muted/30">
+    <section id="features" className="py-24 bg-gradient-to-b from-background via-muted/20 to-muted/30 relative">
+      {/* Section separator */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+      
       <div className="container">
-        <div className="text-center mb-16 space-y-4">
-          <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary border-primary/20">
+        <div className="text-center mb-16 space-y-4 scroll-animate">
+          <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary border-primary/20 scroll-animate animate-delay-100">
             Features
           </Badge>
-          <h2 className="text-4xl lg:text-5xl font-bold">Why Choose FundFlow?</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <h2 className="text-4xl lg:text-5xl font-bold scroll-animate animate-delay-200">Why Choose FundFlow?</h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed scroll-animate animate-delay-300">
             Built with privacy, simplicity, and powerful features in mind
           </p>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className={`group relative overflow-hidden ${feature.bgColor} ${feature.borderColor} border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2`}>
+            <Card key={index} className={`group relative overflow-hidden ${feature.bgColor} ${feature.borderColor} border-2 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 scroll-animate animate-delay-${(index + 1) * 100}`}>
               <div className="p-8 space-y-6">
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${feature.color} flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300`}>
                   <feature.icon className="w-8 h-8 text-white" />

@@ -2,11 +2,12 @@ import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Card } from "@/components/ui/card"
-import { ArrowRight, Shield, Download, Zap } from "lucide-react"
+import { ArrowRight, Shield, Download, Zap, DollarSign, Lock } from "lucide-react"
 
 export function Hero() {
+
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/30">
+    <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 border-b border-border/50">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
       <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
@@ -14,9 +15,9 @@ export function Hero() {
       
       <div className="container relative z-10 py-20 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="hero-content space-y-8">
+          <div className="hero-content space-y-8 scroll-animate-left">
             <div className="space-y-6">
-              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors">
+              <Badge variant="secondary" className="px-4 py-2 text-sm font-medium bg-primary/10 text-primary border-primary/20 hover:bg-primary/20 transition-colors scroll-animate animate-delay-100">
                 <Zap className="w-4 h-4 mr-2" />
                 Open Source & Privacy-First
               </Badge>
@@ -37,7 +38,8 @@ export function Hero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="group px-8 py-6 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300">
                 <Link href="https://app.fundflow.dev" target="_blank">
-                  🚀 Try Live Demo
+                  <Zap className="w-5 h-5 mr-2" />
+                  Try Live Demo
                   <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>
@@ -55,21 +57,23 @@ export function Hero() {
                 Privacy-first design
               </Badge>
               <Badge variant="secondary" className="px-4 py-2 bg-blue-100 text-blue-800 border-blue-200 dark:bg-blue-900/20 dark:text-blue-300 dark:border-blue-800">
-                💰 No subscription fees
+                <DollarSign className="w-4 h-4 mr-2" />
+                No subscription fees
               </Badge>
               <Badge variant="secondary" className="px-4 py-2 bg-purple-100 text-purple-800 border-purple-200 dark:bg-purple-900/20 dark:text-purple-300 dark:border-purple-800">
-                🔐 Your data stays yours
+                <Lock className="w-4 h-4 mr-2" />
+                Your data stays yours
               </Badge>
             </div>
           </div>
           
-          <div className="hero-visual">
+          <div className="hero-visual scroll-animate-right">
             <div className="relative">
               {/* Floating elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary/20 rounded-full blur-xl animate-pulse"></div>
               <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-chart-2/20 rounded-full blur-xl animate-pulse delay-1000"></div>
               
-              <div className="app-preview transform hover:scale-105 transition-transform duration-300">
+              <div className="app-preview transform hover:scale-105 transition-transform duration-300 scroll-animate-scale animate-delay-300">
                 <Card className="app-window shadow-2xl border-2 border-border/50 backdrop-blur-sm bg-card/95">
                   <div className="window-header bg-gradient-to-r from-muted/80 to-muted/60 backdrop-blur-sm">
                     <div className="window-controls">
