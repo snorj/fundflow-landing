@@ -65,8 +65,13 @@ export function Hero() {
     <section className="relative overflow-hidden bg-gradient-to-br from-background via-background to-muted/20 border-b border-border/50" style={{ paddingTop: '6rem', paddingBottom: '6rem' }}>
       {/* Background decoration */}
       <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-      <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-chart-2/10 rounded-full blur-3xl"></div>
+      <div className="absolute top-0 right-0 -translate-y-12 translate-x-12 w-96 h-96 bg-primary/20 dark:bg-primary/10 rounded-full blur-3xl animate-gentle-float"></div>
+      <div className="absolute bottom-0 left-0 translate-y-12 -translate-x-12 w-96 h-96 bg-chart-2/20 dark:bg-chart-2/10 rounded-full blur-3xl animate-gentle-float-delayed"></div>
+      
+      {/* Additional floating elements */}
+      <div className="absolute top-1/4 left-1/4 w-24 h-24 bg-chart-3/35 dark:bg-chart-3/20 rounded-full blur-2xl animate-slow-drift"></div>
+      <div className="absolute bottom-1/3 right-1/3 w-32 h-32 bg-chart-4/30 dark:bg-chart-4/15 rounded-full blur-2xl animate-slow-drift-delayed"></div>
+      <div className="absolute top-2/3 left-1/6 w-16 h-16 bg-primary/35 dark:bg-primary/20 rounded-full blur-xl animate-subtle-pulse"></div>
       
       <div className="container relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">

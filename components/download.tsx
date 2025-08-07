@@ -22,9 +22,15 @@ export function Download() {
   }
 
   return (
-    <section id="download" className="py-24 bg-gradient-to-b from-slate-100/80 to-slate-200/60 dark:from-slate-800/40 dark:to-slate-900/60 relative">
+    <section id="download" className="py-24 bg-gradient-to-b from-slate-100 to-slate-200/80 dark:from-slate-800/40 dark:to-slate-900/60 relative overflow-hidden">
       {/* Section separator */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+      
+      {/* Subtle background animations */}
+      <div className="absolute top-12 right-12 w-28 h-28 bg-slate-300/60 dark:bg-slate-400/20 rounded-full blur-2xl animate-gentle-float"></div>
+      <div className="absolute bottom-12 left-12 w-20 h-20 bg-slate-400/55 dark:bg-slate-300/25 rounded-full blur-xl animate-slow-drift"></div>
+      <div className="absolute top-2/3 right-1/4 w-16 h-16 bg-slate-200/70 dark:bg-slate-500/20 rounded-full blur-lg animate-subtle-pulse"></div>
+      <div className="absolute top-1/4 left-1/3 w-12 h-12 bg-slate-300/65 dark:bg-slate-400/15 rounded-full blur-md animate-gentle-float-delayed"></div>
       
       <div className="container">
         <div className="text-center mb-16 space-y-4 scroll-animate">

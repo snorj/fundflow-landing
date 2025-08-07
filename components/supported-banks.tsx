@@ -53,9 +53,14 @@ export function SupportedBanks() {
   ]
 
   return (
-    <section className="py-24 bg-slate-50/50 dark:bg-slate-900/30 relative">
+    <section className="py-24 bg-blue-50/70 dark:bg-slate-900/30 relative overflow-hidden">
       {/* Section separator */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+      
+      {/* Subtle background animations */}
+      <div className="absolute top-16 left-16 w-24 h-24 bg-blue-300/50 dark:bg-blue-400/20 rounded-full blur-2xl animate-gentle-float"></div>
+      <div className="absolute bottom-16 right-16 w-32 h-32 bg-blue-200/55 dark:bg-blue-500/15 rounded-full blur-3xl animate-gentle-float-delayed"></div>
+      <div className="absolute top-1/3 right-1/6 w-16 h-16 bg-blue-400/45 dark:bg-blue-300/20 rounded-full blur-xl animate-slow-drift"></div>
       
       <div className="container">
         <div className="text-center mb-16 space-y-4 scroll-animate">

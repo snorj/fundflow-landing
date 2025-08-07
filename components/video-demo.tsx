@@ -4,9 +4,14 @@ import { Play } from "lucide-react"
 export function VideoDemo() {
 
   return (
-    <section className="py-24 bg-muted/50 relative">
+    <section className="py-24 bg-slate-50 dark:bg-muted/50 relative overflow-hidden">
       {/* Section separator */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-border to-transparent"></div>
+      
+      {/* Subtle background animations */}
+      <div className="absolute top-10 right-10 w-20 h-20 bg-blue-200/60 dark:bg-blue-500/20 rounded-full blur-xl animate-gentle-float"></div>
+      <div className="absolute bottom-20 left-20 w-28 h-28 bg-slate-200/70 dark:bg-slate-400/20 rounded-full blur-2xl animate-slow-drift"></div>
+      <div className="absolute top-1/2 right-1/4 w-12 h-12 bg-slate-300/60 dark:bg-slate-300/20 rounded-full blur-lg animate-subtle-pulse"></div>
       
       <div className="container">
         <div className="text-center mb-16 space-y-4 scroll-animate">
